@@ -18,4 +18,20 @@ public class GooglePageTest extends BaseTest {
                 .checkThatTittleIs(text);
     }
 
+    @Test
+    public void searchWindows() {
+        String text = "Windows";
+        googlePageSteps
+                .searchFor(text)
+                .checkThatTittleIs(text);
+    }
+
+    @Test
+    public void searchMoscow() {
+        String text = "Moscow";
+        googlePageSteps
+                .searchFor(text)
+                .checkThatTittleIs(text);
+    }
+
 }

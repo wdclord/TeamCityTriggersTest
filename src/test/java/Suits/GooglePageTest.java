@@ -1,17 +1,17 @@
 package Suits;
 
 import content.steps.GooglePageSteps;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
-class GooglePageTest extends BaseTest {
+public class GooglePageTest extends BaseTest {
 
     @Autowired
     private GooglePageSteps googlePageSteps;
 
     @Test
-    void googleSearchText() {
+    public void googleSearchText() {
         String text = "Selenium";
         googlePageSteps
                 .searchFor(text)
